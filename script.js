@@ -12,8 +12,8 @@ function random(min, max) {
 let x, y, dx, dy, radius, color;
 let balls = [];
 for (let i = 0; i < 500; i++) {
-    x = random(innerWidth);
-    y = random(innerHeight);
+    x = random(window.innerWidth);
+    y = random(window.innerHeight);
     dx = random(-2, 2);  // random speed for horizontal component
     dy = random(-2, 2);  // random speed for vertical component
     radius = random(7, 20);
