@@ -11,16 +11,17 @@ function random(min, max) {
 
 let x, y, dx, dy, radius, color;
 let balls = [];
-for( let i = 0; i < 100; i++ ) {
+for (let i = 0; i < 500; i++) {
     x = random(innerWidth);
     y = random(innerHeight);
-    dx = random(2, -2);
-    dy = random(-2, 2);
+    dx = random(-2, 2);  // random speed for horizontal component
+    dy = random(-2, 2);  // random speed for vertical component
     radius = random(7, 20);
     color = `rgba(${random(255)}, ${random(255)}, ${random(255)}, 1)`;
     const b = new ball(x, y, dx, dy, radius, color);
     balls.push(b);
 }
+
 
 
 function animate(){
